@@ -1,15 +1,15 @@
 var express = require('express');
-var router = require('./router');
 var config = require('./config');
 var app = express();
 var port = config.port || 3000;
 var routes = config.routes || [];
-console.log(config.routes || [])
+var defaultMethod = (config.defaultMethod || 'get').toLowerCase();
 
 for(var i = 0; i < routes.length; i++){
     (function (n) {
-        var router = routes[n];
-        app.get(router.path, function (req, res) {
+        var router = routes[n],
+            method = (router.method || defaultMethod).toLowerCase();
+        app[method](router.path, function (req, res) {
             res.json({
                 status: 200,
                 data: router.data
