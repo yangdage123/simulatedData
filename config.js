@@ -10,7 +10,8 @@ var config = {
             path: '/hello',
             data: [1, 2, 3, 4]
         }
-    ]
+    ],
+    port : 8080
 }
 
 module.exports = config;
