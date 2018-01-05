@@ -4,12 +4,12 @@ var app = express();
 var port = config.port || 3000;
 var routes = config.routes || [];
 var defaultMethod = (config.defaultMethod || 'get').toLowerCase();
-
+//this is modify by vim
 app.all('*', function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     next();
 });
-
+//
 for(var i = 0; i < routes.length; i++){
     (function (n) {
         var router = routes[n],
