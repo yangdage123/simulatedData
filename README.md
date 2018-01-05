@@ -1,6 +1,5 @@
 # simulatedData
 > 轻量的模拟后台数据的小插件(使用了express)
-
 ## 使用
 
 修改config.js
