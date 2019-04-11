@@ -1,0 +1,23 @@
+{
+    "name": "simulatedData",
+    "version": "1.0.0",
+    "description": "> 轻量的模拟后台数据的小插件(使用了express) ## 使用",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yangdage123/simulatedData.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/yangdage123/simulatedData/issues"
+    },
+    "homepage": "https://github.com/yangdage123/simulatedData#readme",
+    "dependencies": {
+        "express": "^4.16.4"
+    }
+}
