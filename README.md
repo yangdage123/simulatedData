@@ -37,5 +37,5 @@
 
 控制台启动:
 	
-	node app.js
+	npm start
 
