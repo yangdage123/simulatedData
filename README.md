@@ -11,8 +11,14 @@
 	            data: {
 	                name: 'zhangsan'
 	            },
-	            method: 'get'
+	            method: 'get',
 	        },
+            {
+                path: '/nihao',
+                data: 'error',
+                method: 'get',
+                statusCode: 403
+            },
 	        {
 	            path: '/hello',
 	            data: [1, 2, 3, 4]
@@ -29,6 +35,7 @@
 | routes | 放入路由对象 | 数组|
 | path | 请求的url | 字符串 |
 | data | 返回的数据 |  |
+| statusCode | response的状态码 |  |
 |method| 请求方式 | 字符串 |
 | port | 端口号(默认3000)| 数字 |
 |defaultMethod|默认请求方式|字符串|
